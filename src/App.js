@@ -18,6 +18,7 @@ function App() {
         } else if (elem.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
           return elem;
         }
+        return false;
       }).map((elem, key) => {
         return (
           <div className="user" key={key}>
